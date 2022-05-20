@@ -1,9 +1,9 @@
 <?php
 
-if ($_POST){
+if($_POST){
     print_r($_POST);
 
-    print_r($_FILES);
+    print_r($_FILES['archivo']['name']);
 }
 
 
@@ -18,7 +18,7 @@ if ($_POST){
 </head>
 <body>
     
-     <form action="ejercicio32.php" enoctype="multipart/form-data" method="post">
+     <form action="Valores_input_file.php" enctype="multipart/form-data" method="post">
            imagen:
           <input type="file" name="archivo" id="">
             <br/>
